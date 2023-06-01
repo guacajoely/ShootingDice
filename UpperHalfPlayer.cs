@@ -10,11 +10,12 @@ namespace ShootingDice
         // OVERRIDE ROLL METHOD HAVING IT ROLL A RANDOM NUMBER FOR HALF THE RESULT, THEN ADDING HALF THE DIE VALUE AUTOMATICALLY
         public override int Roll()
         {
-            // Return a random number between 1 and DiceSize
-            return new Random().Next(DiceSize / 2) + (DiceSize / 2);
+            // Return a random number between halfMax and DiceSize
+            int halfMax = DiceSize/2;
+            return new Random().Next(halfMax) + halfMax;
 
-            //COULD ALSO REFACTOR TO SELECT RANDOM IN RANGE BETWEEN HALF OF MAX AND MAX 
-            // return new Random().Next((DiceSize / 2), DiceSize);
+            //COULD ALSO REFACTOR TO SELECT RANDOM IN RANGE BETWEEN HALFMAX AND MAX 
+            // return new Random().Next((halfMax), DiceSize);
         }
     }
 }
