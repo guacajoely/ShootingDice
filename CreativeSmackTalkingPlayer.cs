@@ -4,5 +4,7 @@ namespace ShootingDice
     public class CreativeSmackTalkingPlayer
     {
 
+        
+
     }
 }

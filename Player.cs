@@ -5,7 +5,7 @@ namespace ShootingDice
     public class Player
     {
         public string Name { get; set; }
-        public int DiceSize { get; set; } = 6;
+        public virtual int DiceSize { get; set; } = 6;
 
         public virtual int Roll()
         {
