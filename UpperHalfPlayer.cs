@@ -12,6 +12,9 @@ namespace ShootingDice
         {
             // Return a random number between 1 and DiceSize
             return new Random().Next(DiceSize / 2) + (DiceSize / 2);
+
+            //COULD ALSO REFACTOR TO SELECT RANDOM IN RANGE BETWEEN HALF OF MAX AND MAX 
+            // return new Random().Next((DiceSize / 2), DiceSize);
         }
     }
 }
