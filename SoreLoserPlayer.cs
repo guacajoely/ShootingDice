@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ShootingDice
 {
@@ -10,6 +8,7 @@ namespace ShootingDice
     // Where might you catch this exception????
     public class SoreLoserPlayer : Player
     {
+        // OVERRIDE PLAY METHOD ADDING TRY/CATCH AND EXCEPTION THROWN FOR LOSS
         public override void Play(Player other)
         {
             try
@@ -36,7 +35,6 @@ namespace ShootingDice
                     Console.WriteLine("It's a tie");
                 }
             }
-
             catch (Exception e)
             {
                 Console.WriteLine(e);

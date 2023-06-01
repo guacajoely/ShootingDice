@@ -7,6 +7,8 @@ namespace ShootingDice
     // Override the Play method to make a Player who always roles one higher than the other player
     public class OneHigherPlayer : Player
     {
+        // OVERRIDE PLAY METHOD TO ALWAYS ADD 1 TO OTHER PLAYER'S ROLL RATHER THAN ACTUALLY ROLLING
+        // NOTE: (THIS DOES NOT ALTER THE PLAYERS ROLL WHEN "PLAY" IS CALLED FROM ANOTHER PLAYER OBJECT)
          public override void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object
