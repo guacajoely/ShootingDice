@@ -9,7 +9,6 @@ namespace ShootingDice
     public class SmackTalkingPlayer : Player
     {
         public string Taunt { get; } = "SCARED MONEY DONT MAKE MONEY";
-
         public override int Roll()
         {
             // Return a random number between 1 and DiceSize
