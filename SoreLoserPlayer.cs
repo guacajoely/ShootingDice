@@ -27,7 +27,7 @@ namespace ShootingDice
                 else if (myRoll < otherRoll)
                 {
                     Console.WriteLine($"{other.Name} Wins!");
-                    throw new InvalidOperationException("ME LOSING IS AN EXCEPTION!");
+                    throw new Exception("ME LOSING IS AN EXCEPTION!");
                 }
                 else
                 {
